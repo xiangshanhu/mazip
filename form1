@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生信息</title>
+</head>
+<style>
+    
+    input{
+        position: relative;
+        margin-top: 2px;
+        margin-bottom: 5px;
+        width: 400px;
+        height: 22px;
+    }
+    br{
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    span{
+        color: red;
+    }
+    #bt1{
+        width: 400px;
+        background-color:lightgray;
+        position: relative;
+        margin-top: 40px;
+    }
+    
+</style>
+<body>
+        <h1>
+            学生信息
+        </h1>
+        <fieldset style="width: 420px;height: 580px;" >
+            <legend style="color: red;">学生档案</legend>
+           <form>
+                <br>姓名：</br>
+                <input type="text" name="name" placeholder="请输入姓名" required><span>*</span>
+                <br>学号：</br>
+                <input type="number" placeholder="请输入学号" required="required"/><span>*</span>
+                <br>手机号码：</br>
+                <input type="tel" placeholder="请输入手机号码" required="required"/><span>*</span>
+                <br>邮箱地址：</br>
+                <input type="e-mail" id = 'e-mail' list = 'e-maillist'placeholder="请输入邮箱地址" required="required"/><span>*</span>
+                <br>录取学校：</br>
+                <input type="text" list="school"/>
+                <br>入学成绩：</br>
+                <input type="number" />
+                <br>入学时间：</br>
+                <input type="date" />
+           
+            <datalist id="school">
+                <option value="北京大学"/>
+                <option value="清华大学"/>
+                <option value="厦门大学"/>
+                <option value="武汉大学"/>
+            </datalist>
+            <datalist id="e-maillist">
+                <option value="*@qq.com"/>
+                <option value="*@q163.com"/>
+                <option value="*@126.com"/>
+                <option value="*@yahoo.com"/>
+
+            </datalist>
+            <button id="bt1">提交</button>
+        </form>
+        </fieldset>
+        <script>
+
+        </script>
+</body>
+</html>
